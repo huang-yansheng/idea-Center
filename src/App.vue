@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <all-money class="all-money"></all-money>
+    <router-view></router-view>
+    <!-- <login></login> -->
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+ import AllMoney from 'components/content/AllMoney.vue'
+ // import Login from './components/content/login/Login.vue'
+ export default {
+   name:"app",
+   components:{
+     AllMoney,
+     // Login
+   }
+ }
+</script>
+
+<style lang="scss" scoped>
+@import url("assets/css/base.css");
+
+#app{
+  position: relative;
+  height: 100%;
+}
+.all-money{
+  position: fixed;
+  right: 100px;
+  top: 10px;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

@@ -1,0 +1,29 @@
+$colorMain:#edf723;
+$colorSecondary:#23AD89;
+$colorHight:#96CADE;
+$colorBackground:#1B6785;
+$colorSize:#000000;
+$blue:#0558d4;
+$red:#ee4640;
+$fontSize:16px;
+$lineHight:1.5;
+
+@mixin center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin btn {
+  padding: 10px 0;
+  min-width: 150px;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: all .5s;
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.5);
+}

@@ -1,0 +1,83 @@
+@media screen and (max-width:1920px) {
+  .mid {
+    width: 800px;
+    height: 800px;
+  }
+
+  .Num-list {
+    width: 650px;
+    height: 300px;
+  }
+
+  .inter-face {
+    width: 650px;
+    height: 60px;
+  }
+
+  .money-ready {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width:1680px) {
+  .mid {
+    width: 700px;
+    height: 600px;
+  }
+
+  .Num-list {
+    width: 600px;
+    height: 250px;
+  }
+
+  .inter-face {
+    width: 600px;
+    height: 60px;
+  }
+
+  .money-ready {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .mid {
+    width: 660px;
+    height: 600px;
+  }
+
+  .Num-list {
+    width: 580px;
+    height: 250px;
+  }
+
+  .inter-face {
+    width: 580px;
+    height: 60px;
+  }
+
+  .money-ready {
+    width: 580px;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .mid {
+    width: 660px;
+    height: 600px;
+  }
+
+  .Num-list {
+    width: 580px;
+    height: 250px;
+  }
+
+  .inter-face {
+    width: 580px;
+    height: 60px;
+  }
+
+  .money-ready {
+    width: 580px;
+  }
+}
