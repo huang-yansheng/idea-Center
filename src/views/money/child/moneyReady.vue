@@ -9,7 +9,6 @@
       <div class="test">补充:如果选择了倍数,中奖了就是多倍快乐,比如投了双倍,那六等奖就是两份奶茶</div>
       <button class="rewards-btn" @click="rewards">返回</button>
     </div>
-      <audio ref="audio" src="~assets/mp3/money.mp3"></audio>
   </div>
 </template>
 
@@ -22,7 +21,7 @@
         isRewards:false,
         double:1,
         much:2,
-        dontAdd:false
+        dontAdd:false,
       }
     },
     computed:{
@@ -49,8 +48,6 @@
       },
       //点击投注按钮
       startGame(){
-        //播放音乐
-        console.log(this.$refs.audio)
         //触发开始事件,把倍数传过去
         this.$emit('opening',this.double)
         //将钱添加进奖池内

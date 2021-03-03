@@ -1,6 +1,9 @@
 <template>
   <div class="money">
     <go-home class="go-home"></go-home>
+    <audio ref="audio">
+      <source src="~assets/mp3/money.mp3" />
+    </audio>
     <div class="money-one" v-if="isShow == 'status-one'">
       <div class="header">欢迎来到彩票攒钱游戏</div>
       <money-reles @gameStart="gameStart"></money-reles>
@@ -133,6 +136,9 @@
       },
       //开奖了。
       opening(){
+        //播放音乐
+        this.$refs.audio.play()
+        
         this.isSelect = false;
         this.blueStatus = 0;
         this.isShow = 'status-three';
