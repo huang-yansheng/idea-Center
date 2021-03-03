@@ -37,10 +37,6 @@ export default new Vuex.Store({
     }
   },
   getters:{
-    // getMoney(state){
-    //   state.allMoney = +localStorage.getItem('allMoney')
-    //   return state.allMoney
-    // }
   },
   actions: {
   },

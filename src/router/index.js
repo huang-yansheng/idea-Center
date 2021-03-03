@@ -31,7 +31,7 @@ const router = new VueRouter({
   routes
 })
 
-//跳转路由时判断是否登录
+// 跳转路由时判断是否登录
 // router.beforeEach((to,from,next)=>{
 //     //页面刷新时，随时保存token
 //     store.commit('saveMsg')
