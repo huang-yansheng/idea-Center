@@ -14,6 +14,8 @@ export default new Vuex.Store({
   mutations: {
     addMoney(state,cs){
       state.allMoney += cs
+      //将金币存进本地存储中
+      localStorage.setItem("allMoney", state.allMoney)
     },
     //保存token
     saveMsg(state){
@@ -28,9 +30,17 @@ export default new Vuex.Store({
     },
     changeLoginStatus(state,cs){
       state.LoginStatus = !state.LoginStatus
+    },
+    //进入页面时，刷新金钱
+    getMoney(state){
+       state.allMoney = +localStorage.getItem('allMoney')
     }
   },
   getters:{
+    // getMoney(state){
+    //   state.allMoney = +localStorage.getItem('allMoney')
+    //   return state.allMoney
+    // }
   },
   actions: {
   },

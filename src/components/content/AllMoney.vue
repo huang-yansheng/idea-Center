@@ -7,7 +7,10 @@
 
 <script>
   export default {
-    name:"AllMoney"
+    name:"AllMoney",
+    mounted() {
+      this.$store.commit('getMoney')
+    }
   }
 </script>
 
